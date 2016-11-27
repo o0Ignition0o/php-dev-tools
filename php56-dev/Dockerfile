@@ -1,6 +1,6 @@
 #If you want to use the shell files provided in this folder, you shall run the following command :
 #docker build -t php56-dev .
-FROM php56
+FROM jeremylempereur/php-tools:56
 MAINTAINER Jeremy Lempereur
 
 #Switch to root user to install pecl

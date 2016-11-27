@@ -52,7 +52,7 @@ RUN rm /etc/localtime && \
 RUN mkdir /var/www && chown www-data:www-data /var/www \
 
 # Change the first user's id to www-data, to avoid file permission errors
-&& usermod -u 1000 www-data
+&& usermod -u 1000 www-data && groupmod -g 1000 www-data
 
 # Run all commands inside the container as www-data
 USER www-data

@@ -1,6 +1,6 @@
 #If you want to use the shell files provided in this folder, you shall run the following command :
 #docker build -t php7-dev .
-FROM php7
+FROM jeremylempereur/php-tools:7
 MAINTAINER Jeremy Lempereur
 
 #Switch to root user to install pecl

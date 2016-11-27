@@ -1,4 +1,4 @@
-# Ignition PHP dev tools
+# PHP dev tools
 
 
 These are the base images I use to develop on my php-symfony projects.
