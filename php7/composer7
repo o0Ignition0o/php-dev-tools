@@ -1,1 +1,2 @@
-docker run -i --rm -v "${PWD}":"${PWD}" -v /tmp/:/tmp/ -w ${PWD} --net=host --sig-proxy=true --pid=host jeremylempereur/php-tools:7 composer "$@"
+#!/usr/bin/env bash
+docker run -i --rm -v "${PWD}":"${PWD}" -v /tmp/:/tmp/ -v ${HOME}:${HOME} -w ${PWD} --net=host --sig-proxy=true --pid=host jeremylempereur/php-tools:7 composer "$@"
