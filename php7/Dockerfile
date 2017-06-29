@@ -7,6 +7,9 @@ RUN apt-get update && apt-get install -y \
 
     git \
     unzip \
+    zlib1g-dev \
+    libicu-dev \
+    g++ \
 
     # GD dependencies
 
@@ -22,6 +25,9 @@ RUN apt-get update && apt-get install -y \
     # Type docker-php-ext-install to see available extensions
 
     && docker-php-ext-install pdo_mysql opcache \
+
+    && docker-php-ext-configure intl \
+    && docker-php-ext-install intl \
 
     # GD configure
 
